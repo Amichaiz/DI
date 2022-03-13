@@ -1,0 +1,61 @@
+.div1 {
+    background-color: rgb(252, 238, 118);
+    border: 2px solid rgb(253, 162, 44);
+    box-shadow: 0px 0px 90px 1px rgb(252, 108, 24);
+}
+.div1 p {
+    color: aquamarine;
+    text-decoration: underline;
+}
+
+.flag {
+    display: flex;
+    width: 300px;
+    height: 150px;
+    border: 1px solid black;
+    animation-name: roll-in-left;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: none;
+}
+
+@keyframes roll-in-left {
+    0% {
+        transform: translateX(-800px) rotate(-540deg);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0) rotate(0deg);
+        opacity: 1;
+    }
+}
+
+.blue {
+    background-color: blue;
+    width: 33%;
+}
+.red {
+    background-color: red;
+    width: 33%;
+    margin-left: 33%;
+}
+li:nth-child(2){
+    color: blue;
+}
+div ul li {
+text-transform: uppercase;
+font-weight: bold;
+}
+p:first-child {
+    color: white;
+    background-color: pink;
+}
+
+p:last-child {
+    background-color: lightblue;
+    margin: 5px;
+    padding: 5px;
+}
