@@ -1,0 +1,90 @@
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0%;
+    text-align: center;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana,
+        sans-serif;
+}
+#login {
+    background-color: rgb(211, 209, 209);
+    padding: 5px;
+    margin: 10px;
+    border: none;
+    width: 73%;
+}
+.login p {
+    width: 100%;
+    text-align: center;
+    border-bottom: 2px solid #000;
+    line-height: 0.1em;
+    margin: 10px 0 20px;
+    
+}
+.login p span {
+    background: rgb(226, 224, 224);
+    
+    padding: 0 10px;
+}
+form a {
+    margin-left: 100px;
+    color: grey;
+}
+
+footer {
+    margin-top: 150px;
+}
+
+.login {
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    background-color: rgb(226, 224, 224);
+    color: grey;
+}
+.login button {
+    width: 73%;
+    background-color: purple;
+    color: white;
+}
+.logup {
+    color: white;
+    width: 50%;
+    height: 100%;
+    float: right;
+    background: linear-gradient(35deg, purple, rgb(43, 42, 42));
+}
+.logup button {
+    border-radius: 32%;
+    color: white;
+    border: 1px solid white;
+    background-color: transparent;
+    height: 40px;
+    width: 120px;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    color: rgb(128, 126, 126);
+}
+
+.fa:hover {
+    opacity: 0.5;
+}
+
+
+.fa-circle-arrow-right {
+height: 250px;
+
+    color: rgb(252, 8, 8);
+}
+i .fa-user-plus {
+    color: rgb(245, 8, 8);
+    width: 500px;
+}
+
