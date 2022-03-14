@@ -1,0 +1,27 @@
+
+.A {
+    background-color: darkgray;
+    height: 300px;
+    position: relative;
+}
+
+.B {
+    background-color: blue;
+    height: 250px;
+    width: 300px;
+    top: 10px;
+    left: 5px;
+}
+
+.C {
+    background-color: orange;
+    height: 250px;
+    width: 300px;
+    bottom: 15px;
+    left: 7px;
+    
+}
+
+div {
+    position: absolute;
+}
