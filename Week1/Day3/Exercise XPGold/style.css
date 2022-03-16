@@ -1,0 +1,43 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/4/4d/BlankMap-World.svg");
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+    width: 100%;
+    text-align: center;
+}
+li {
+    display: inline-block;
+    list-style: none;
+    padding: 50px;
+}
+li h2 {
+    color: blueviolet;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.a {
+    background: linear-gradient(360deg, lightcoral 20%, white 45%, white);
+    border-radius: 20px;
+}
+.b {
+    background: linear-gradient(360deg, rgb(92, 4, 192) 20%, white 45%, white);
+    border-radius: 20px;
+    justify-self: center;
+}
+.c {
+    background: linear-gradient(360deg, rgb(9, 187, 172) 20%, white 45%, white);
+    border-radius: 20px;
+}
+ h5 {
+     color: white;
+ }
