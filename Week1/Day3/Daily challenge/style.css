@@ -1,0 +1,23 @@
+* {
+    box-sizing: border-box;
+}
+.container {
+    border: 3px solid blue;
+    display: flex;
+    justify-content: space-between;
+}
+
+.box {
+    background-color: bisque;
+    border: 1px solid black;
+    height: 50px;
+    width: 50px;
+    margin: 10px;
+}
+
+.center {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
