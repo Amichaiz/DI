@@ -1,0 +1,27 @@
+body {
+    margin: auto 0;
+}
+
+#mainc {
+    background-image: url("https://cdn.pixabay.com/photo/2016/10/11/21/43/geometric-1732847_960_720.jpg"
+    );
+}
+.nav-link {
+    color: aliceblue;
+}
+#mainc > .card {
+    background: none;
+    color: azure;
+}
+
+#btnc {
+    background: none;
+
+}
+#btnx {
+    background: none;
+    color: black;
+}
+.material-icons-outlined {
+    background-color: blue;
+}

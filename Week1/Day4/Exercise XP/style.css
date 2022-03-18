@@ -1,0 +1,22 @@
+
+.navbar {
+    background-color: rgb(56, 55, 54);
+}
+
+#cover {
+    background-color: rgb(207, 205, 205);
+
+}
+.card-title > span {
+    text-align: center;
+    background-color: rgb(85, 185, 252);
+    color: aliceblue;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+#btnx {
+    background-color: white;
+    color: grey;
+    border: 1px solid lightgray;
+}
