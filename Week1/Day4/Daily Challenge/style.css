@@ -1,0 +1,15 @@
+#red {
+    background-color: lightcoral;
+    color: red;
+}
+
+#pop {
+    background-color: rgb(195, 201, 200);
+    transform: scale(1.2);
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
