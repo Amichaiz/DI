@@ -15,6 +15,7 @@ let wordBad = "bad";
 let noti = sentence.indexOf(wordNot);
 let badi = sentence.indexOf(wordBad);
 let badiLen = wordBad.length;
+
 console.log("noti", noti, " badi",badi);
 
 if (noti < badi && noti !== -1) {

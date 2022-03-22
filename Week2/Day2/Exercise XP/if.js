@@ -56,7 +56,7 @@ if (newDog === "chihuahua") {
 // If it is odd, display: “x is an odd number”. Where x is the actual number the user chose.
 
 // 1
-
+// let num = +prompt("choose a number please.")
 let num = 15;
 
 // 2
