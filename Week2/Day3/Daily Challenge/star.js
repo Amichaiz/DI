@@ -10,8 +10,34 @@
 // * * * * * *
 
 
+// let length = +prompt("choose a number");
+let length = 10;
+
+//using for loop.
+
+for (let i = 0; i < length; i++) {
+    let sign = '*';
+    let str = sign.repeat(i) + "\n"
+    // console.log(str);
+}
+
+
+//using nested loop
+
+for (let i = 0; i < length; i++) {
+    let sign = " ";
+    for (let j = 0; j <= i; j++) {
+        sign += "*";
+
+    }
+    // console.log(sign);
+}
+
+
+//using function.
+getAsterisks(length);
+
 function getAsterisks(length) {
-    var length = 5;
     var sign = ' ';
 
     while (length > 0) {
@@ -19,22 +45,11 @@ function getAsterisks(length) {
         length--;
         console.log(sign);
     }
-    return sign;
+
+    // console.log(sign);
 }
 
-getAsterisks(5);
 
-getaster(5);
-function getaster(num) {
-    num = 5;
-    let sign = " ";
-    for (let i = num; i < num; i--) {
-        sign += "*";
-        console.log(sign);
-
-    }
-  return sign;
-}
 
 
 
