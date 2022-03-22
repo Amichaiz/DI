@@ -14,11 +14,12 @@ let wordBad = "bad";
 
 let noti = sentence.indexOf(wordNot);
 let badi = sentence.indexOf(wordBad);
-let a = wordBad.length;
+let badiLen = wordBad.length;
+console.log("noti", noti, " badi",badi);
 
-if (noti < badi) {
+if (noti < badi && noti !== -1) {
 
-    console.log( `${sentence.substring(0,noti)} good ${sentence.substring((badi + a))}`);
+    console.log( `${sentence.substring(0,noti)} good ${sentence.substring((badi + badiLen))}`);
 } else {
     console.log("The movie is not that bad, I like it");
 }
