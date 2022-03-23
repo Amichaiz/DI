@@ -20,8 +20,8 @@ let peter = {
     Mass: 250,
     Height: 6.2,
     Bmi:
-        function bmiCalc(Mass, Height) {
-            const BMI = Mass / Height * 2;
+        function bmiCalc() {
+            const BMI = 250 / (6.2) * 2;
             return BMI
         },
 }
@@ -32,7 +32,7 @@ let lois = {
     Height: 5.7,
     Bmi:
         function bmiCalc() {
-            const BMI = Mass / Height * 2;
+            const BMI = 850 / (9.7) * 2;
             return BMI
         }
 }
@@ -41,13 +41,12 @@ function bmiCalc(Mass, Height) {
     const BMI = Mass / Height * 2;
 }
 
-let bmiA = bmiCalc(peter.Mass, peter.Height);
-let bmiB = bmiCalc(lois.Mass, lois.Height);
-
+let bmiB = lois.Bmi();
+let bmiA = peter.Bmi();
 biggerBmi();
 
 function biggerBmi() {
-    if (bmiB > bmiA) {
+    if (bmiB < bmiA) {
         console.log(`${peter.FullName} have the largest BMI :${bmiA}`);
     } else {
         console.log(`${lois.FullName} have the largest BMI :${bmiB}`);
@@ -97,6 +96,7 @@ let gradesList = [90, 60, 75, 95, 55, 80]
 
 // }
 
+//tow functions
 
 findAvg(gradesList);
 
@@ -108,7 +108,7 @@ function findAvg(array) {
         let currGrade = array[i];
         sum += currGrade;
     }
-    // consle.log(avg);
+    
     passOrFuzz(avg);
 }
 

@@ -9,7 +9,7 @@
 let names = ["Jack", "Philip", "Sarah", "Amanda", "Bernard", "Kyle"];
 
 let password = ' ';
-
+names = names.sort();
 for(let i = 0; i < names.length; i++){
 password += names[i][0];
 }

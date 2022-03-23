@@ -32,7 +32,7 @@ function sortNums(nums) {
     var minNum = Infinity; // repesent the smallest num on js
     var MinNumIndex = 0; //index of the smallest num
     var newArray = []; // the array with the resaulte
-    var copyArr = nums.slice(); //in every loop slice num stored in "copyArr" 
+    var copyArr = nums.slice(); //in every loop slice num stored in to "copyArr" 
 
     for (var j = 0; j < nums.length; j++) {
 
