@@ -1,0 +1,14 @@
+body{
+    background-color: rgb(236, 236, 3);
+}
+
+button {
+    border-radius: 20px;
+    font-size: 30px;
+    color: rgb(2, 108, 143);
+}
+
+h3 {
+    color: blueviolet;
+
+}
