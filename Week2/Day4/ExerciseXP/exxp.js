@@ -158,7 +158,7 @@ function planeRideCost() {
             return 50000;
         }
     
-    } while (!isNaN(destination));
+    } while (!isNaN(destination) );
 
 }
 
