@@ -2,8 +2,8 @@
 const GAMEON = '🙂';
 const LOSE = '🤯';
 const VICTORY = '😎';
-const EMPTY = '';
-const FLAG = '🚩'
+const EMPTY = ''; 
+const FLAG = '🚩';
 var gBoard;
 let elStatus = document.querySelector('.status');
 let elMark = document.querySelector('.markcount');

@@ -15,7 +15,7 @@ function buildBoard(length) {
                 isMarked: false
             }
         }
-
+ 
     }
 
     return board;

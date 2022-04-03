@@ -2,7 +2,7 @@
 const MINE = '💣';
 var gMineCell = [];
 
-
+ 
 
 function putMine(board, size, num) {
     for (let i = 0; i < num; i++) {
