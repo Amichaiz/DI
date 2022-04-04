@@ -62,8 +62,8 @@ function reapetVal(val , num){
 // ex5
 
 const startLine = '     ||<- Start line';
-let turtle = '🐢';
-let rabbit = '🐇';
+let turtle = '        🐢';
+let rabbit = '        🐇';
 
 // When you write:
 
@@ -77,7 +77,7 @@ console.log(rabbit);
 // '       🐢'
 // '       🐇'
 // What happens when you run 
-turtle = turtle.trim().padEnd(9, '='); //turtle gets first to finish line
+turtle = turtle.trim().padEnd(9, '='); //turtle gets 9steps ahead.
 
 console.log(startLine);
 console.log(turtle);
