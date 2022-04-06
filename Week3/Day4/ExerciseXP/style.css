@@ -1,0 +1,28 @@
+*{box-sizing: border-box;}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(49, 2fr);
+    height: 100vh;
+    width: calc(80% - 1px);
+    border: 1.5px solid black;
+    float: right;
+}
+.cell {
+    border: 1px solid rgb(214, 212, 212);
+}
+.color{
+    border: 1px solid darkolivegreen;
+    margin: 1px;
+}
+button{
+    height: 10vh;
+    width: calc(20%);
+}
+.side {
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr;
+    height: 90vh;
+    width: calc(20%);
+    border: 2px solid black;
+}
