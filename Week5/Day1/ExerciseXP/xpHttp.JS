@@ -10,7 +10,7 @@
 // When you click the Send button, the form will be submitted with a GET method. (you can use the same HTML file for the action url)
 // Where will the sent data appear?
 
-//ANS   it will be at the URL adress as query and also at the NETWORK section in the devtool.
+//ANS   it will be at the URL adress as query and also at the NETWORK section in the devtool, used to retrive data.
 
 // Exercise 2 : HTML Form #2
 // Instructions
@@ -19,7 +19,7 @@
 // Where will the sent data appear? Hint : Look at the Network Tab
 
 //ANS on NETWORK section in the DevTool., send the data to the server
-//but in my case it gave an error 405
+//& create/Update a resource ....but in my case it gave me  an error 405
 
 
 //Exercise 3 : JSON Mario
