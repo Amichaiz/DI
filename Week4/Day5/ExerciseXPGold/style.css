@@ -1,0 +1,8 @@
+.col {
+    background-color: rgb(154, 152, 150);
+    margin: 3px;
+    height: 150px;
+    width: 150px;
+    font-size: 5rem;
+    text-align: center;
+}
