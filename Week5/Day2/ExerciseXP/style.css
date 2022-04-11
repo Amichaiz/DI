@@ -1,0 +1,19 @@
+body {
+    background: linear-gradient(to bottom right, purple, yellow);
+    /* background: content-box radial-gradient(rgb(129, 3, 148), rgb(245, 251, 77)); */
+    background-repeat: no-repeat;
+    height: 100vh;
+    text-align: center;
+}
+button {
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    font-size: 20px;
+}
+li {
+    list-style: decimal-leading-zero;
+    padding: 15px;
+    margin: 2px;
+    color: white;
+    border: 1px solid rgb(2, 141, 192);
+    border-radius: 5px;
+}
