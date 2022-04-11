@@ -13,6 +13,7 @@ function jsonForm1(e) {
 
     const res = JSON.stringify(fromJSON);
     console.log('res', res);
+    console.log('res', data.get('fName'));
 
 
 }
