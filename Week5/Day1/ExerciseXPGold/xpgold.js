@@ -17,6 +17,6 @@ debugger
 let xhr = new XMLHttpRequest();
 xhr.open("POST","/another.html");
 // xhr.send(FormData)
-xhr.send(printBdy(e));
+xhr.send();
 xhr.onload = () => console.log(xhr.response);
 
