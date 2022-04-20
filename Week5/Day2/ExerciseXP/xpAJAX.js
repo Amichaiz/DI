@@ -61,7 +61,7 @@
                 if (xhr02.status === 200) {
                     let res02 = xhr02.response.data;
                     let sunRes = res02.data.filter(element => {
-                        if (element['url'] === 'sun') {
+                        if (element['url'] === 'su') {
                             console.log(element);
                         }
                     });

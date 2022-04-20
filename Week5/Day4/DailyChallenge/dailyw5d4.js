@@ -25,8 +25,6 @@ Promise.all([promise1, promise2, promise3]).then((val) => {
 
 // Retrieve the input’s value and display the hour of the sunrise for both city ONLY when both promises are resolved
 // Hint : Use Promise.all()
-// let parisSunrise = getSunrise(48.864716,2.349014 );
-// let newyorkSunrise = getSunrise(40.730610,-73.935242 );
 // Try with Paris and New York
 // Paris
 // Latitude: 48.864716
@@ -35,11 +33,17 @@ Promise.all([promise1, promise2, promise3]).then((val) => {
 // New York
 // Latitude: 40.730610
 // Longitude: -73.935242
-const getSunrise = async function () {
-    const parisLan = 48.864716;
-    const parisLog = 2.349014;
-    const newyorkLan = 40.730610;
-    const newyorkLog = -73.935242;
+
+
+let form = document.forms[0];
+form.addEventListener('submit', getSunrise)
+async function getSunrise(e) {
+    console.log('hiii');
+    e.preventDefault();
+    const parisLan = form.elements[1].value;
+    const parisLog = form.elements[2].value;
+    const newyorkLan = form.elements[4].value;
+    const newyorkLog = form.elements[5].value;
     try {
         let requestParis = await fetch(`https://api.sunrise-sunset.org/json?lat=${parisLan}&lng=${parisLog}
         `);
@@ -47,11 +51,10 @@ const getSunrise = async function () {
         `);
 
         let [resParis, resNy] = await Promise.all([requestParis, requestNy])
-        // console.log('resParis', resParis, 'resNy', resNy);
 
-        if(resParis.status === 200 || resNy.status === 200){
-            let [sunParis , sunNy] = await Promise.all([resParis.json(), resNy.json()])
-            console.log('sunParis', sunParis['results']['sunrise']  , 'sunNy',sunNy['results']['sunrise']);
+        if (resParis.status === 200 || resNy.status === 200) {
+            let [sunParis, sunNy] = await Promise.all([resParis.json(), resNy.json()])
+            console.log('sunParis', sunParis['results']['sunrise'], 'sunNy', sunNy['results']['sunrise']);
         } else {
             throw Error('error');
         }
@@ -60,6 +63,5 @@ const getSunrise = async function () {
     }
 }
 
-getSunrise();
 
 
