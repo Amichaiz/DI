@@ -1,14 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>mini proj currency</title>
 </head>
+
 <body>
-    
+    <div class="container">
+        <h1>Currency Converter</h1>
+        <h3> FROM :
+            <select name="from" ></select>
+        </h3>
+        <h3>TO :
+            <select name="to" ></select>
+        </h3>
+        <h3>AMOUNT :
+            <input type="text" value="1">
+            <button onclick="convert()"> CONVERT</button> <br> <br>
+            <input type="text" placeholder="the total amount is:">
+        </h3>
+
+
+    </div>
 
     <script src="currency.js"></script>
 </body>
+
 </html>
