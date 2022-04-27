@@ -23,8 +23,8 @@
 //     End date and time : "05/08/2021 21:00:00"
 
 //     Done : False
-let form = document.forms[0];
-let tasks = [];
+const form = document.forms[0];
+const tasks = JSON.parse(localStorage.getItem('Task')) || [];
 const addTask = (e) => {
     e.preventDefault();
 
@@ -42,53 +42,62 @@ const addTask = (e) => {
     tasks.push(objForm);
     localStorage.setItem('Task', JSON.stringify(tasks));
     console.log(tasks);
-    displayTask(tasks);
+    // displayTask(tasks);
 }
 form.addEventListener('submit', addTask)
 
-const displayTask = (array) => {
+// const displayTask = (array) => {
 
-    let strHTML = `<table>`
-    let display = document.getElementsByClassName('display')[0];
-    let p = document.createElement('p')
-    let str = ''
-    for (let i = 0; i < array.length; i++) {
-        let currObj = array[i]
-        strHTML += `<tr class="task task-${i}"> <td onclick="deleteTask(this,${i})">X</td>`
-        for (const key in currObj) {
-            let element = currObj[key];
-            if (element === false) {
-                element = 'unCompleted'
-                str += element;
-                strHTML += `<td>${element}</td>`
-            } else {
-                str += element;
-                strHTML += `<td>${element}</td>`
-            }
+//     let strHTML = `<table>`
+//     let display = document.getElementsByClassName('display')[0];
+//     let p = document.createElement('p')
+//     let str = ''
+//     for (let i = 0; i < array.length; i++) {
+//         let currObj = array[i]
+//         strHTML += `<tr class="task task-${i}"> <td onclick="deleteTask(this,${i})">X</td>`
+//         for (const key in currObj) {
+//             let element = currObj[key];
+//             if (element === false) {
+//                 element = 'unCompleted'
+//                 str += element;
+//                 strHTML += `<td>${element}</td>`
+//             } else {
+//                 str += element;
+//                 strHTML += `<td>${element}</td>`
+//             }
 
-            p.textContent = str;
-            display.appendChild(p);
-        }
-        // display.removeChild(p);
-        // p.parentElement.remove();
-        // str += element;
-        strHTML += `</tr>`;
-    }
-    strHTML += `</table>`
-    display.innerHTML = strHTML;
-}
+//             p.textContent = str;
+//             display.appendChild(p);
+//         }
+//         // display.removeChild(p);
+//         // p.parentElement.remove();
+//         // str += element;
+//         strHTML += `</tr>`;
+//     }
+//     strHTML += `</table>`
+//     display.innerHTML = strHTML;
+// }
+// let body = document.body
+// console.log(body)
 
-const deleteTask = (e, i) => {
-    // let taskToDelete = document.
-    console.log(i);
-    e.parentElement.remove();
-    for (let j = 0; j < tasks.length; j++) {
-        if (j === i) {
-            tasks.splice(j, 1)
-        }
+// const deleteTask = (e, i) => {
+//     // let taskToDelete = document.
+//     console.log(i);
+//     // let localData = JSON.parse(localStorage.getItem('Task'));
+//     // console.log(localData);
+//     e.parentElement.remove();
+//     for (let j = 0; j < tasks.length; j++) {
+//         localStorage.removeItem('Task')
+//         if (j === i) {
+//             tasks.splice(j, 1)
+//             localData.splice(j, 1)
+//             localStorage.setItem('Task', tasks)
+//             console.log(localData);
 
-    }
-}
+//         }
+
+//     }
+// }
 
 // As soon as the user submits the form, the task should be saved.
 // By default, the status of the task is “uncompleted” (ie. isCompleted: false)
