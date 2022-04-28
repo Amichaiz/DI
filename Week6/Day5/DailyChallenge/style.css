@@ -1,19 +1,22 @@
-body{
-    background: repeating-linear-gradient(45deg, #738dcf 5%, #356fc5 15%, #7b7e93 20% ,lightblue 25%);
-    }
-    table {
-      font-family: arial, sans-serif;
-      border-collapse: collapse;
-      border-spacing: 2rem;
-      width: 100%;
-    }
-    
-    td{
-      text-align: left;
-      padding: 8px;
-    }
-    
-    tr{
-      border: 3px solid black;
-    }
-    
+body {
+  background: repeating-linear-gradient(45deg, #738dcf 5%, #356fc5 15%, #7b7e93 20%, lightblue 25%);
+  text-align: center;
+  font-family: 'Rubik Puddles', cursive;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 2rem;
+  width: 100%;
+}
+
+td {
+  text-align: left;
+  padding: 8px;
+}
+
+tr {
+  border: 3px solid black;
+}
+.complete {
+  color: greenyellow;
+}
