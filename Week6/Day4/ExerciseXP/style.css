@@ -1,0 +1,59 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    background-color: rgb(99, 69, 106);
+    text-align: center;
+    font-family: 'Rubik Puddles', cursive;
+    
+}
+
+a {
+    font-family: 'Rubik Glitch', cursive;
+    color: darkkhaki;
+}
+input {
+    height: 8vh;
+    width: 60%;
+}
+button {
+    height: 8vh;
+    width: 10%;
+}
+
+/* .wraper { */
+    /* display: grid;
+    grid-template-columns: 3fr 3fr ;
+    border: 1px solid grey;
+    color: white; */
+/* } */
+
+.itemImg {
+    margin: 2px;
+    padding: 2px;
+    position: relative;
+    border-radius: 10%;
+}
+
+img {
+    width: 50%;
+    height: auto;
+    border-radius: 50%;
+    background-color: rgb(123, 128, 129);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+img:hover {
+    transform: scale(1.07);
+}
+/* P {
+    bottom: 8px;
+    left: 16px;
+    font-size: 18px;
+    margin: 0;
+} */
+h4 {
+    margin: 0;
+}
+h6 {
+    margin: 0;
+}
