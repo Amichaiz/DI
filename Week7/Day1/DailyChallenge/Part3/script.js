@@ -4,7 +4,7 @@ let cd = date.currDate();
 
 const server = http.createServer((request, response) => {
     console.log(request.url);  
-    // response.setHeader(`content-Type`, `text/html`);
+    response.setHeader(`content-Type`, `text/html`);
     response.write(`The date and time are currently : `);
     response.end(cd);
 })
