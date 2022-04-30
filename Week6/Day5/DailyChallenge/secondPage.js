@@ -12,7 +12,7 @@ const displayTask = () => {
             if (element === false || key === "endTime" || key === "description") {
                 continue;
             } else if (key === "name") {
-                strHTML += `<td onclick="displayDescription(this,${i})">${element}</td>`
+                strHTML += `<td onclick="editTask(this,${i})", onmouseover="displayDescription(this,${i})">${element}</td>`
             } else {
                 strHTML += `<td>${element}</td>`
             }
@@ -22,18 +22,18 @@ const displayTask = () => {
     strHTML += `</table>`
     display.innerHTML = strHTML;
 }
-
 const completeTask = (e, n) => {
-    let color = e;
     if (e.textContent === '❌') {
         tasks[n]['isComplete'] = true;
         e.textContent = '✔️';
+        e.style.color = 'green'
     } else {
         tasks[n]['isComplete'] = false;
         e.textContent = '❌';
     }
 }
 const displayDescription = (e, n) => {
+
     if (e.textContent === tasks[n]['name']) {
         e.textContent = `description: ${tasks[n]['description']}`;
     } else {
@@ -49,6 +49,12 @@ const deleteTask = (i) => {
         displayTask();
     }
 }
+const editTask = (e, n) => {
+    tasks[n]['name'] = prompt('edit your task title,please');
+    tasks[n]['description'] = prompt('edit your task description,please');
+    localStorage.setItem('Task', JSON.stringify(tasks));
+    displayTask();
+}
 
 //create calander
 
@@ -58,5 +64,5 @@ const deleteTask = (i) => {
 // console.log(start.getTime());
 // const showGraph = () => {
 //   let graph = document.querySelector('.graph')
-//   console.log(graph);  
+//   console.log(graph);
 // }

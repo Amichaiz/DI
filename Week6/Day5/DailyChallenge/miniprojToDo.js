@@ -1,5 +1,5 @@
-document.body.style = `font-family: 'Rubik Puddles', cursive; text-align: center;`
-// localStorage.clear()
+document.body.style = `font-family: 'Rubik Puddles', cursive; text-align: center; background-image:linear-gradient(red, yellow, green);   height: 100vh;`
+localStorage.clear()
 const form = document.forms[0];
 const tasks = JSON.parse(localStorage.getItem('Task')) || [];
 form.addEventListener('submit', addTask = (e) => {
