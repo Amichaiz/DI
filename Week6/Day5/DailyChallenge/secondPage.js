@@ -1,9 +1,9 @@
 let tasks = JSON.parse(localStorage.getItem('Task')) || [];
 
 const displayTask = () => {
-
     let strHTML = `<table><tr><th>/</th><th>TITLE</th><th>START-TASK</th><th>DAYS LEFT</th>`
     let display = document.getElementsByClassName('wraper')[0];
+    
     for (let i = 0; i < tasks.length; i++) {
         let currObj = tasks[i]
         strHTML += `<tr class="task task-${i}"> <td onclick="completeTask(this,${i})" ondblclick="deleteTask(this,${i})">❌</td>`
@@ -55,14 +55,3 @@ const editTask = (e, n) => {
     localStorage.setItem('Task', JSON.stringify(tasks));
     displayTask();
 }
-
-//create calander
-
-// let start = new Date()
-// let end = ((new Date()) + (86400000 * 7))
-// console.log((start.getTime() / (1000 * 3600 * 24)) - (start.getTime()));
-// console.log(start.getTime());
-// const showGraph = () => {
-//   let graph = document.querySelector('.graph')
-//   console.log(graph);
-// }
