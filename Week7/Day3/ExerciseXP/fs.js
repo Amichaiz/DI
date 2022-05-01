@@ -28,4 +28,4 @@ fs.appendFile('./cover.txt', addText +'\n', (err) => {
 });
 
 // delete the new txt file
-fs.unlink('./cover.txt',(err) => {console.log(err,'errorry');})
+// fs.unlink('./cover.txt',(err) => {console.log(err,'errorry');})
