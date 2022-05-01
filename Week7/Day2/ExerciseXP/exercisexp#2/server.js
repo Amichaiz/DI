@@ -12,10 +12,10 @@ app.use(express.static('public'))
 // }).listen(3000,console.log(`server running on port 3000`,user));
 
 // EX2
-// app.get('/id', (req, res) => {
+// app.get('/:id', (req, res) => {
 //     console.log(req); 
 //     res.json(req.params.id);
-//     res.send(req.params.id);
+//     res.send('the id is:' + req.params.id);
 // }).listen(3000, console.log(`server running on port 3000`))
 
 // EX3
