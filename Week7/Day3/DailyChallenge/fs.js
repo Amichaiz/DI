@@ -10,44 +10,27 @@ fs.readFile('./rightToLeft.txt', 'utf8', (err, data) => {
 });
 
 const countSteps = (str) => {
+    //str to arr
     let dataToArr = str.split('');
+    //<total steps
     let left = 0;
+    //>total steps
     let right = 0;
-    let count = 0;
-    // let countAll =left -right
-    // let ttlCount;
+    //-1 encounters
+    let count = [];
 
-    for (let i = 0; i < dataToArr.length; i++) {
-        let currSign = dataToArr[i];
+    dataToArr.forEach(currSign => {
+
         if (currSign === '<') {
             left++;
-            if ((right - left) === -1 && count === 0) {
-                console.log('A', (right + left), 'A',);
+            if ((right - left) === -1) {
+                let sum = (right + left)
+                count.push(sum);
             }
-            count++
-
         } else if (currSign === '>') {
             right++;
-            count++
-            if ((right - left) === -1 && count === 0) {
-                console.log('a', (right + left), 'b',);
-            }
         }
-    }
-    // dataToArr.forEach((corresponding) => {
-    //       if(dataToArr[0] === '<'){
-    //         if (corresponding === '<') {
-    //             left++
-    //             right--
-    //         } else {
-    //             left--
-    //             if(left === -1){
-    //                 ttlCount = right -left
-    //             }
-    //             // right++
-    //         }
-    //     }
-    //     });
-    //     // let countAll = right - left;
-    console.log('right', right, 'left', left);
+    });
+    console.log(right - left, 'steps to the right');
+    console.log('first time in left side is in', count[0]);
 }
