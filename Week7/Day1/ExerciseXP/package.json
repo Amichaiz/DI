@@ -4,7 +4,7 @@
   "description": "node js",
   "main": "main.js",
   "scripts": {
-    "start": "nodemon"
+    "start": "nodemon"//you need to add something else over here so the nodemon will know what server file to keep alive
   },
   "author": "Adane melese",
   "license": "ISC",
